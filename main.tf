@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = "${file("service-account")}"
+  credentials = var.credentials
   project = "just-amp-325919"
   region  = "us-central1"
 }
